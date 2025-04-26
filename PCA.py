@@ -1,7 +1,8 @@
 ## PCA
 import numpy as np 
 def pca(data: np.ndarray, k: int) -> np.ndarray:
-	## standardise data 
+	
+    ## standardise data 
     x_mean = np.mean(data, axis = 0)
     x_std = np.std(data, axis = 0)
     data = (data - x_mean) / x_std
